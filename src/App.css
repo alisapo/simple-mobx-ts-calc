@@ -1,0 +1,55 @@
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to left, #00ff99, #00cccc);
+}
+
+.result,
+.calculations {
+  width: 266px;
+  height: 40px;
+  background-color: #003333;
+  text-align: end;
+  margin: 0px 10px 0px 10px;
+}
+
+.result {
+  font-size: 25px;
+  color: #99cccc;
+}
+
+.calculations {
+  color: #ffffff;
+}
+
+.keyboard {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 268px;
+}
+
+.keyboard-buttons {
+  width: 67px;
+  height: 67px;
+  font-size: 23px;
+  color: #333333;
+  outline: none;
+  cursor: pointer;
+  border: 1px solid #ffffff;
+  background-color: #ccffff;
+}
+
+.keyboard-buttons:hover {
+  background-color: rgb(208, 165, 248);
+  color: #ffffff;
+}
+
+.keyboard-buttons:first-child,
+.keyboard-buttons:last-child {
+  width: 134px;
+}
