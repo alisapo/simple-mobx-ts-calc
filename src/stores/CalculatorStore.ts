@@ -13,7 +13,18 @@ class CalculatorStore {
     })
   }
 
-  addValue(value: string) {}
+  addValue(value: string) {
+    
+  }
+
+  calculate = () => {
+    try {
+      this.result = (eval(this.calculations) || "") + "";
+    } catch (error) {
+      this.result = "error";
+    }
+  }
+
 };
 
 export default CalculatorStore;
