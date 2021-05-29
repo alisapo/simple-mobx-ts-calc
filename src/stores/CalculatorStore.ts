@@ -25,6 +25,14 @@ class CalculatorStore {
     }
   }
 
+  reset = () => {
+    this.result = "";
+    this.calculations = "";
+  }
+
+  delSymbol = () => {
+    this.calculations = this.calculations.slice(0, -1);
+  }
 };
 
 export default CalculatorStore;
