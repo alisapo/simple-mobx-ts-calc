@@ -1,3 +1,6 @@
+# Demo of this app is
+here: https://alisapo.github.io/simple-mobx-ts-calc-demo/
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
