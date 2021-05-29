@@ -14,7 +14,26 @@ class CalculatorStore {
   }
 
   addValue(value: string) {
-    
+    if (value === "=") {
+      this.calculate();
+    }
+    else if (value === "AC") {
+      this.reset();
+    }
+    else if (value === "DEL") {
+      this.delSymbol();
+    }
+    else {
+      this.calculations = this.calculations + value;
+
+      if (this.calculations.length > 20) {
+        this.calculations = "out of limit";
+        setTimeout(() => {
+          this.calculations = "";
+        }, 1500);
+      }
+      if (this.result) this.result = "";
+    }
   }
 
   calculate = () => {
