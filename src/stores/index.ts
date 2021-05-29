@@ -10,4 +10,8 @@ export const store: TStore = {
   calculatorStore: new CalculatorStore(),
 };
 
+export const StoreContext = createContext(store);
 
+export const useStore = () => {
+  return useContext(StoreContext);
+};
