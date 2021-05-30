@@ -38,7 +38,7 @@ class CalculatorStore {
 
   calculate = () => {
     try {
-      this.result = (eval(this.calculations) || "") + "";
+      this.result = (eval(this.calculations) || "0") + "";
     } catch (error) {
       this.result = "error";
     }

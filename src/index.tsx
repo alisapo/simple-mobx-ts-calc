@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import './index.css';
+import './styles/index.css';
 
-import App from './App';
+import App from './components/App';
 import { store, StoreContext } from './stores';
 
 import reportWebVitals from './reportWebVitals';

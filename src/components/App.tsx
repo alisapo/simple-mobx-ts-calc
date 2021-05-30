@@ -1,10 +1,10 @@
 import React from 'react';
 
-import './App.css';
+import '../styles/App.css';
 
-import CalculationField from './components/CalculationField';
-import ResultField from './components/ResultField';
-import Keyboard from './components/Keyboard';
+import CalculationField from './CalculationField';
+import ResultField from './ResultField';
+import Keyboard from './Keyboard';
 
 function App() {
   return (
